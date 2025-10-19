@@ -323,23 +323,121 @@ body {
 /* =========================================================
    OUR COSTUMER
 ========================================================= */
-.carousel-indicators {
-  bottom: -15px;
-  left: -80%;
+.hero {
+  background: linear-gradient(
+      to right,
+      #0a1e47 0%,
+      #0a1e47 65%,
+      rgba(10, 30, 71, 0.7) 75%,
+      rgba(10, 30, 71, 0.3) 100%,
+      transparent 75%
+    ),
+    url("../foto/image24.svg") center/cover no-repeat;
+  min-height: 250px;
+  position: relative;
 }
 
-.container-our-costumer {
-  background-color: #081a3d;
+/* corousel */
+.carousel-section {
+  max-width: 600px;
+  width: 100%;
+  padding-left: 5%;
+  padding-bottom: 50px;
+}
+
+.section-title {
   color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 30px;
+  letter-spacing: 3px;
 }
 
-.row-content-testimoni {
-  padding-left: 3%;
+.carousel-container {
+  position: relative;
+  overflow: hidden;
 }
 
-.rounded-circle {
-  width: 80px;
-  height: 80px;
+.carousel-track {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+}
+
+.avatar {
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  background: #c4c4c4;
+  flex-shrink: 0;
+}
+
+.content {
+  flex: 1;
+  padding-top: 5px;
+}
+
+.name {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.description {
+  color: #b8c5d6;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.stars {
+  display: flex;
+  gap: 2px;
+}
+
+.star {
+  color: #ffc107;
+  font-size: 1rem;
+}
+
+.score {
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.indicators {
+  display: flex;
+  gap: 8px;
+  margin-top: 25px;
+}
+
+.indicator-dot {
+  width: 35px;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.25);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.indicator-dot.active {
+  background: white;
 }
 
 /* =========================================================
