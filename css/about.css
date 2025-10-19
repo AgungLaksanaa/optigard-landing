@@ -1,0 +1,238 @@
+/* =========================================================
+   TEXT STYLE TEMPLATE
+   (Gunakan untuk konsistensi ukuran & hierarki judul)
+========================================================= */
+.text-title-1 {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.text-title-2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.text-title-3 {
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.text-title-4 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.text-title-5 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.text-title-small-1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.text-title-small-2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.3;
+}
+
+/* =========================================================
+   BUTTON TEMPLATE
+========================================================= */
+.button-primary-1 {
+  background-color: white;
+  color: #071b40;
+  font-weight: 500;
+  font-size: 1.25rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.button-primary-1:hover {
+  background-color: #f1f1f1;
+}
+/* =========================================================
+   GLOBAL STYLE
+========================================================= */
+body {
+  font-family: "Poppins", sans-serif;
+  padding-top: 80px;
+}
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+.navbar-collapse {
+  transition: all 0.3s ease;
+}
+
+.nav-link {
+  position: relative;
+  color: #000;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #000;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link:hover {
+  color: #000;
+}
+
+.btn-navbar {
+  background: linear-gradient(to right, #071b40, #0059de);
+  background-size: 200% 100%;
+  background-position: left center;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-position 0.6s ease;
+}
+
+.btn-navbar:hover {
+  background-position: right center;
+  color: white;
+}
+
+/* =========================================================
+   SPESIFICATION
+========================================================= */
+.spesification {
+  background-color: #112d4e;
+  color: white;
+}
+
+/* =========================================================
+   TABLE ALL
+========================================================= */
+.table-container {
+  background-color: #112d4e;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #1e3a5f;
+}
+
+.table th:first-child,
+.table td:first-child {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #153c63;
+}
+
+.table tbody tr:nth-child(odd) {
+  background-color: #1a456d;
+}
+
+/* =========================================================
+   TABLE HYBRID LUXE
+========================================================= */
+.container-hybrid {
+  background-color: #071b40;
+}
+
+.table-container-hybrid {
+  background-color: #071b40;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #ffffff;
+}
+
+/* Table base */
+.table-container-hybrid .table {
+  background-color: #071b40;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+/* Header tabel */
+.table-container-hybrid .table thead th {
+  background-color: #071b40;
+  color: #ffffff;
+  border-color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Isi tabel */
+.table-container-hybrid .table tbody td {
+  background-color: #071b40;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.container .text-hybrid-p p {
+  color: #ffffff; /* teks jadi putih */
+}
+
+/* =========================================================
+   FOOTER 
+========================================================= */
+.bg-footer {
+  background-color: #000c24;
+}
+
+/* --- Tablet & Medium --- */
+@media (max-width: 1000px) {
+  /* navbar */
+  .navbar .navbar-collapse {
+    display: none !important;
+  }
+
+  .navbar .navbar-toggler {
+    display: block !important;
+  }
+
+  .navbar .navbar-collapse.show {
+    display: block !important;
+    width: 100%;
+  }
+}
+
+/* Responsive behavior */
+@media (max-width: 992px) {
+  .table-container {
+    width: 100%;
+  }
+
+  .container p {
+    text-align: justify;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .col-lg-6 {
+    width: 100%;
+  }
+}
