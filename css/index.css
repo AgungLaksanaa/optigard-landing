@@ -729,12 +729,18 @@ body {
   }
 
   .carousel-item .row {
-    flex-wrap: nowrap; /* cegah kolom turun */
+    flex-wrap: wrap !important;
   }
+
   .carousel-item .col-md-7,
   .carousel-item .col-md-5 {
-    flex: 0 0 50%; /* masing-masing ambil separuh lebar */
-    max-width: 50%;
+    flex: 0 0 100%; /* Full width */
+    max-width: 100%;
+  }
+
+  .text-our-product {
+    padding-right: 0;
+    padding-top: 1rem;
   }
 
   .text-our-product {

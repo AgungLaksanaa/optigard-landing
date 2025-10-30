@@ -34,3 +34,28 @@ function next() {
 
 // Auto play every 5 seconds
 setInterval(next, 5000);
+
+// owl carousel OUR PROJECT
+$(".owl-carousel").owlCarousel({
+  loop: false,
+  center: false,
+  margin: 10,
+  URLhashListener: true,
+  autoplayHoverPause: true,
+  startPosition: "URLHash",
+  responsive: {
+    0: {
+      items: 2,
+      nav: true,
+    },
+    600: {
+      items: 3,
+      nav: false,
+    },
+    1000: {
+      items: 4,
+      nav: true,
+      loop: false,
+    },
+  },
+});
